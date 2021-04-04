@@ -15,6 +15,7 @@ public class LemparCoin extends Activity implements View.OnClickListener {
     private Button buttonUlang;
     private Button buttonKeluar;
     private Random acak;
+    private ImageView iw;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -27,8 +28,8 @@ public class LemparCoin extends Activity implements View.OnClickListener {
         buttonLempar.setOnClickListener(this);
         buttonUlang.setOnClickListener(this);
         buttonKeluar.setOnClickListener(this);
-
-
+        iw = findViewById(R.id.imageView1);
+        iw.setImageResource(R.drawable.question);
     }
 
     @Override
